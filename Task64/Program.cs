@@ -1,13 +1,11 @@
-﻿int n = InputNumbers("Введите n: ");
-int count = 2;
-PrintNumber(n, count);
-Console.Write(1);
+﻿int m = InputNumbers("Введите m: ");
+int n = InputNumbers("Введите n: ");
 
-void PrintNumber(int n, int count)
+void PrintNumber(int m, int n)
 {
-  if (count > n) return;
-  PrintNumber(n, count + 1);
-  Console.Write(count + ", ");
+  if (n > m) return;
+  PrintNumber(m, n + 1);
+  Console.Write(n + ", ");
 }
 
 int InputNumbers(string input) 
@@ -16,3 +14,4 @@ int InputNumbers(string input)
   int output = Convert.ToInt32(Console.ReadLine());
   return output;
 }
+Console.WriteLine();
